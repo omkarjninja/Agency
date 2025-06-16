@@ -70,7 +70,7 @@ export default function Socials() {
 							<div className="flex w-fit h-fit gap-x-[5px] group">
 								<div className="rounded-[50px] border-[2px] border-[#21212155] group-hover:bg-secondry  py-[3px] px-[12px] cursor-pointer">
 									<Link
-										href="mailto:webonismstudio@gmail.com"
+										href="mailto:hello@webonism.com"
 										className="paragraph font-NeueMontreal text-secondry uppercase group-hover:text-background transition-all duration-200 ease-in">
 										hello@Webonism.Studio
 									</Link>
