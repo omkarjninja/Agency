@@ -21,6 +21,7 @@ import { title } from "process";
 
 const content = {
 	title: "Parallel Cafe",
+	url: "https://parallel-cafe-trial.vercel.app/",
 	description: "Parallel Cafe is a vibrant space in Kalaburagi, Karnataka, that offers not only great food and coffee but also hosts customized events such as birthday parties, small gatherings, and themed celebrations. It blends a cozy ambience with a lively community vibe.",
 	services: [
 		"Website Design",
@@ -51,7 +52,7 @@ export default function Work() {
 	return (
 		<>
 			<Curve backgroundColor="#f1f1f1">
-				<Hero title={content.title} description={content.description} services={content.services} imageSrc={P1} bgImage={P2}/>
+				<Hero title={content.title} description={content.description} services={content.services} imageSrc={P1} bgImage={P2} link={content.url}/>
 				<About about={content.about} industry={content.industry} companySize={content.companySize} imageSrc={P2}></About>
 				<Challenge service={content.service} imageSrc={{img1: P2, img2: P3, img3: P4, img4: P4, img5: P5, img6: P2}}></Challenge>
 				<Results result={content.result} feedback={content.feedback} />

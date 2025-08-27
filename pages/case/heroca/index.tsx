@@ -17,10 +17,12 @@ import Challenge from "@/components/Chelenge";
 import Results from "@/components/Result";
 import Credits from "@/components/Credit";
 import { title } from "process";
+import { u } from "framer-motion/client";
 
 
 const content = {
 	title: "Heroca Restaurant",
+	url: "https://lucent-truffle-f3de7f.netlify.app/",
 	description: "Heroca is a quaint, locally loved restaurant that focuses on creating a timeless dining experience. The brand carries a classic aesthetic, and the website was designed to reflect that refined yet minimal vibe.",
 	services: [
 		"Minimal Website Design",
@@ -51,7 +53,7 @@ export default function Work() {
 	return (
 		<>
 			<Curve backgroundColor="#f1f1f1">
-				<Hero title={content.title} description={content.description} services={content.services} imageSrc={H7} bgImage={H2}/>
+				<Hero title={content.title} description={content.description} services={content.services} imageSrc={H7} bgImage={H2} link={content.url}/>
 				<About about={content.about} industry={content.industry} companySize={content.companySize} imageSrc={H1}></About>
 				<Challenge service={content.service} imageSrc={{img1: H2, img2: H3, img3: H4, img4: H4, img5: H5, img6: H6}}></Challenge>
 				<Results result={content.result} feedback={content.feedback} />

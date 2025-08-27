@@ -73,7 +73,7 @@ export default function Footer() {
 							</h1>
 							<LinkHover
 								title="hello@webonism.studio"
-								href="mailto:webonismstudio@gmail.com"
+								href="mailto:hello@webonism.com"
 								className="before:h-[1px] after:h-[1px] paragraph font-medium before:bottom-[-3px] after:bottom-[-3px]"
 							/>
 						</div>

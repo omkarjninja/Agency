@@ -21,6 +21,7 @@ import { title } from "process";
 
 const content = {
 	title: "Sigdi Restaurant",
+	url: "https://starlit-lokum-187d67.netlify.app/",
 	description: "Sigdi is a popular restaurant located in Vijayapura, Karnataka, known for its authentic flavors and warm dining experience. The restaurant offers a range of North Indian and Tandoori dishes, served in a cozy, family-friendly setting.",
 	services: [
 		"Website Design & Development",
@@ -52,7 +53,7 @@ export default function Work() {
 	return (
 		<>
 			<Curve backgroundColor="#f1f1f1">
-				<Hero title={content.title} description={content.description} services={content.services} imageSrc={S1} bgImage={S2}/>
+				<Hero title={content.title} description={content.description} services={content.services} imageSrc={S1} bgImage={S2} link={content.url}/>
 				<About about={content.about} industry={content.industry} companySize={content.companySize} imageSrc={S3}></About>
 				<Challenge service={content.service} imageSrc={{img1: S2, img2: S3, img3: S4, img4: S7, img5: S5, img6: S2}}></Challenge>
 				<Results result={content.result} feedback={content.feedback} />

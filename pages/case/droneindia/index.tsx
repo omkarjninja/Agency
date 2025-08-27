@@ -21,6 +21,7 @@ import { title } from "process";
 
 const content = {
 	title: "The Drone India",
+	url: "https://thedroneindia.com/",
 	description: "The Drone India is an emerging startup focused on making drone technology accessible through an innovative rental platform. The service enables individuals and businesses to rent drones for various purposes such as events, photography, agriculture, and surveying.",
 	services: [
 		"Branding & Identity Design",
@@ -51,7 +52,7 @@ export default function Work() {
 	return (
 		<>
 			<Curve backgroundColor="#f1f1f1">
-				<Hero title={content.title} description={content.description} services={content.services} imageSrc={D7} bgImage={D2}/>
+				<Hero title={content.title} description={content.description} services={content.services} imageSrc={D7} bgImage={D2} link={content.url}/>
 				<About about={content.about} industry={content.industry} companySize={content.companySize} imageSrc={D5}></About>
 				<Challenge service={content.service} imageSrc={{img1: D1, img2: D2, img3: D3, img4: D4, img5: D5, img6: D6}}></Challenge>
 				<Results result={content.result} feedback={content.feedback} />

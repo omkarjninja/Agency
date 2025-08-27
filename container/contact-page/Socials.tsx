@@ -7,6 +7,9 @@ import { LinkHover, TextMask } from "@/animation";
 import { useEffect, useState, useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { Eyes } from "@/components";
+import MaskText from "@/animation/TextMask";
+import AnimatedLinks from "@/components/TextMaskAgain";
+import { footernavbarItems } from "@/constants";
 
 export default function Socials() {
 	const [rotate, setRotate] = useState(0);
@@ -37,9 +40,17 @@ export default function Socials() {
 			ref={container}>
 			<div className="w-full h-full flex justify-center gap-[50px] items-center flex-col">
 				<div className="flex flex-col gap-[10px] pb-[50px]">
-					<h1 className="text-[277px] leading-[207px] lg:text-[230px] lg:leading-[170px] md:text-[150px] md:leading-[100px] sm:text-[74px] sm:leading-[68px] xm:text-[64px] xm:leading-[48px] text-center font-bold font-FoundersGrotesk text-secondry uppercase pointer-events-none">
-						<TextMask>{phrase}</TextMask>
-					</h1>
+					<AnimatedLinks 
+
+  children={[
+    { text: "INSTAGRAM", href: "https://www.instagram.com/webonismstudio/" },   // works with router.push
+    { text: "behance", href: "https://www.behance.net/omkarjadhavninja" },     // works with router.push
+    { text: "X", href:"https://x.com/omkarjadhavninj" },    // works with router.push
+    { text: "linkedin", href: "https://www.linkedin.com/in/omkar-jadhav-ninja/" }, // opens in new tab
+  ]}
+/>
+					{/* <h1 className="text-[277px] leading-[207px] lg:text-[230px] lg:leading-[170px] md:text-[150px] md:leading-[100px] sm:text-[74px] sm:leading-[68px] xm:text-[64px] xm:leading-[48px] text-center font-bold font-FoundersGrotesk text-secondry uppercase pointer-events-none">
+					</h1> */}
 				</div>
 				<div className="w-full border-t border-[#21212155] pt-[20px]">
 					<div className="w-full flex sm:flex-col xm:flex-col justify-between gap-y-[20px] padding-x">
@@ -70,7 +81,7 @@ export default function Socials() {
 							<div className="flex w-fit h-fit gap-x-[5px] group">
 								<div className="rounded-[50px] border-[2px] border-[#21212155] group-hover:bg-secondry  py-[3px] px-[12px] cursor-pointer">
 									<Link
-										href="mailto:webonismstudio@gmail.com"
+										href="mailto:hello@webonism.com"
 										className="paragraph font-NeueMontreal text-secondry uppercase group-hover:text-background transition-all duration-200 ease-in">
 										hello@Webonism.Studio
 									</Link>

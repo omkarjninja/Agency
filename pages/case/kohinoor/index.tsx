@@ -21,6 +21,7 @@ import { title } from "process";
 
 const content = {
 	title: "Kohinoor Watches",
+	url: "https://kohinoorwatches.com/",
 	description: "Kohinoor Watches is a trusted retailer in Kalaburagi, Karnataka, specializing in premium and stylish watches for all occasions. With a legacy of quality and customer satisfaction, the store offers a curated selection of both classic and modern timepieces.",
 	services: [
 		"Website Development",
@@ -51,7 +52,7 @@ export default function Work() {
 	return (
 		<>
 			<Curve backgroundColor="#f1f1f1">
-				<Hero title={content.title} description={content.description} services={content.services} imageSrc={K1} bgImage={K7}/>
+				<Hero title={content.title} description={content.description} services={content.services} imageSrc={K1} bgImage={K7} link={content.url}/>
 				<About about={content.about} industry={content.industry} companySize={content.companySize} imageSrc={K2}></About>
 				<Challenge service={content.service} imageSrc={{img1: K2, img2: K3, img3: K4, img4: K5, img5: K6, img6: K2}}></Challenge>
 				<Results result={content.result} feedback={content.feedback} />

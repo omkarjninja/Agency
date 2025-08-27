@@ -21,6 +21,7 @@ import { title } from "process";
 
 const content={
 	title: "Blog Daily",
+	url:"https://omkarblog.vercel.app/",
 	description: "Blog Daily is a platform that provides daily updates on various topics, including technology, health, and lifestyle. The platform aims to keep its users informed and engaged with the latest trends and news.",
 	services: [
 		"Content Creation",
@@ -50,7 +51,7 @@ export default function Work() {
 	return (
 		<>
 			<Curve backgroundColor="#f1f1f1">
-				<Hero title={content.title} description={content.description} services={content.services} imageSrc={B1} bgImage={B2}/>
+				<Hero title={content.title} description={content.description} services={content.services} imageSrc={B1} bgImage={B2} link={content.url}/>
 				<About about={content.about} industry={content.industry} companySize={content.companySize} imageSrc={B2}></About>
 				<Challenge service={content.service} imageSrc={{img1: B1, img2: B2, img3: B3, img4: B4, img5: B5, img6: B6}}></Challenge>
 				<Results result={content.result} feedback={content.feedback} />

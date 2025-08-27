@@ -35,7 +35,7 @@ export const footerItems = [
    {
       id: 1,
       title: "Instagram",
-      href: "https://www.instagram.com/webonism.studio/",
+      href: "https://www.instagram.com/webonismstudio/",
    },
    {
       id: 2,
